@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProblemTwo_CompilationError
 {
-    class Employee
+    class Employee 
     {
+        private int eid;
+        private string eName;
+        private string eLevel;
+        private DateTime eDoj;
+
         public int EmpID { get; set; }
         public string EmpName { get; set; }
         public int EmpLevel { get; set; }
@@ -21,6 +26,10 @@ namespace ProblemTwo_CompilationError
         }
         public Employee(int eID,string eName,int eLevel, DateTime eDoJ)
         {
+            this.EmpID = eID;
+            this.EmpName = eName;
+            this.EmpLevel = eLevel;
+            this.DateOfJoining = eDoJ;
 
         }
 

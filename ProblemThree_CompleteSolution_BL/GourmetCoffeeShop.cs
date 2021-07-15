@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProblemThree_CompleteSolution_BL
 {
-    public class GourmetCoffeeShop : GourmetShop, ITaxCompute
+    public abstract class GourmetCoffeeShop : GourmetShop, ITaxCompute
     {
-        
+        double ITaxCompute()
+        {
+
+
+        }
+        public override double PayPerPiece(int quantity)
+        { 
+            
+        }
+
     }
 }
